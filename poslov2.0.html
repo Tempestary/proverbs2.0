@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Пословицы 2.0</title>
+<!--        <link href="https://fonts.googleapis.com/css?family=Bad+Script&amp;subset=cyrillic" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Ruslan+Display&amp;subset=cyrillic" rel="stylesheet">
+        <style>
+                footer {
+                text-align: center;
+                font-size: 10px;
+                font-family: "Tahoma";
+                margin-top: 180px;
+            }
+            body {
+                background-color: goldenrod;
+                    @import url('https://fonts.googleapis.com/css?family=Bad+Script&subset=cyrillic');
+
+/*                font-family: 'Bad Script', cursive;*/
+                font-family: 'Ruslan Display', cursive;
+            } 
+            
+            .moar {
+                color: black;
+                font-size: 90%;
+                margin: 0;
+            }
+            .generator {
+                color: aliceblue;
+                font-size: 200%;
+                padding: 50px;
+                margin-top: 150px;
+            }
+        </style>
+        <body>
+        <H1 align="center">Народная мудрость гласит:</H1>
+        <p align="center" id=phraseOfTheDay class="generator"></p>
+        <script src="2.0.js"></script>
+        <script>
+  document.getElementById("phraseOfTheDay").innerHTML=mix(partOne,partTwo,partThree);
+        </script>
+        <style>
+        .babka {
+        text-align: center; /* Выравнивание по центру */ 
+        margin: 0;
+   }
+            #babka {
+            border: red solid 1px;
+   }
+            #babkaContainer:hover img {
+    -moz-transform: rotate(25deg); /* Для Firefox */
+    -ms-transform: rotate(25deg); /* Для IE */
+    -webkit-transform: rotate(25deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(25deg); /* Для Opera */
+    transform: rotate(25deg);
+            }
+            
+            #babkaContainer {
+                border: green solid 1px;
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+                
+                cursor: pointer;
+            }
+        </style>
+        <p align="center" class="moar">Ещё хочешь, милок? Жми на бабулю!</p>
+            <p class="babka">
+                <span id="babkaContainer">
+                    <img src="babushka.png" id=babka />
+<!--
+                    <img src="babushka2.png" id=babka />
+                    <img src="babushka5.png" id=babka />
+-->
+                </span>
+            </p>
+    <script>
+        babkaContainer.onclick=function() {
+            document.getElementById("phraseOfTheDay").innerHTML=mix(partOne,partTwo,partThree); 
+        }
+    </script>>
+        </body>
+    <footer> Milkavian 2016
+    </footer>
+    </head>
